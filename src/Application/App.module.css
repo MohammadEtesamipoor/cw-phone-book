@@ -1,0 +1,41 @@
+body{
+    margin: 0;
+    background-color: rgba(184, 155, 201, 0.11);
+
+}
+.home{
+    display: flex;
+    height: 100vh;
+    margin: 20px;
+}
+.phoneBook{
+    padding: 0px 50px;
+    width: 30%;
+    flex-basis:90%;
+}
+
+.imgBack{
+    flex-basis:5%;
+    width:5%;
+    height:60px;
+    
+}
+.imgBack:hover {
+    animation-name: shakeBack;
+    animation-duration: 1s;
+}
+.imgBack:active{
+    margin-right: -10px;
+
+}
+@keyframes shakeBack {
+    0%{
+        margin-right: 0px;
+    }
+    50%{
+        margin-right: -10px;
+    }
+    100%{
+        margin-right: 0px;
+    }
+}
